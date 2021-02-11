@@ -1,0 +1,486 @@
+@import '_global';
+
+// ***** PAGE HEADER TAG ***** //
+header {
+    font-family: 'Josefin Sans',
+        sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100vh;
+    padding: 1.6rem;
+
+    background-image: url(../images/mobile/image-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// Logo + Hamburguer Menu
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .hamburguer-icon {
+        cursor: pointer;
+    }
+
+    // Hidden menu items for mobile version!! //
+    nav {
+        display: none;
+    }
+}
+
+// Box "Immersive experiences..."
+.header-box {
+    border: 2.5px solid $White;
+
+    text-transform: uppercase;
+    font-size: 4rem;
+
+    max-height: 50%;
+    width: 100%;
+    padding: 1.8rem;
+    margin: auto;
+
+    color: $White;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// ***** MAIN PAGE TAG ***** //
+main {
+    margin: 9rem auto;
+    width: 90%;
+}
+
+// *** First Container + Second Container(presets)
+.first-container,
+.second-container {
+    width: 100%;
+
+    font-family: 'Josefin Sans',
+        sans-serif;
+    text-align: center;
+
+    // Image Tag //
+    img {
+        width: 100%;
+    }
+}
+
+.presentation-container {
+
+    // "The leader in interactive VR" - <h2> tag //
+    h2 {
+        margin: 2.5rem 0 1.5rem;
+
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    // "Founded in 2011..." - <p> tag //
+    p {
+        width: 85%;
+        margin: 0 auto;
+
+        color: $Very-Dark-Gray;
+
+        line-height: 1.4;
+        font-size: 1.7rem;
+    }
+}
+
+// *** Second Container *** //
+.second-container {
+    margin: 6.8rem 0;
+}
+
+// Global CSS for page BUTTONS
+.see-all-desktop,
+.see-all-mobile {
+    width: 145px;
+    padding: 1rem;
+
+    cursor: pointer;
+
+    font-family: 'Alata',
+        sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+
+    border: 1px solid $Black;
+    background-color: $White;
+    color: $Black;
+
+    transition: .3s;
+}
+
+.see-all-mobile {
+    margin: 2.5rem 0;
+}
+
+.see-all-desktop:hover,
+.see-all-mobile:hover {
+    background-color: $Black;
+    color: $White;
+}
+
+// Header and "See All" button //
+.header-w-button {
+    h2 {
+        margin: 2.5rem 0rem;
+
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    // Display none to button desktop when resolution is mobile size!
+    .see-all-desktop {
+        display: none;
+    }
+}
+
+// Grid Content Boxes
+.boxes-container {
+    display: grid;
+    grid-template-columns: repeat(autofill, 1fr);
+    grid-template-rows: repeat(autofill, 1fr);
+    gap: 20px;
+}
+
+// Boxes presets
+.box {
+    height: 130px;
+    padding: 1.4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    color: $White;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    text-align: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    cursor: pointer;
+}
+
+.box:hover {
+    opacity: .8;
+}
+
+// Boxes images + dark left side of image
+.box-1 {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, .8)),
+        url(../images/mobile/image-deep-earth.jpg);
+}
+
+.box-2 {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, .8)),
+        url(../images/mobile/image-night-arcade.jpg);
+}
+
+.box-3 {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, .8)),
+        url(../images/mobile/image-soccer-team.jpg);
+}
+
+.box-4 {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, .8)),
+        url(../images/mobile/image-grid.jpg);
+}
+
+.box-5 {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, .8)),
+        url(../images/mobile/image-from-above.jpg);
+}
+
+.box-6 {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, .8)),
+        url(../images/mobile/image-pocket-borealis.jpg);
+}
+
+.box-7 {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, .8)),
+        url(../images/mobile/image-curiosity.jpg);
+}
+
+.box-8 {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, .8)),
+        url(../images/mobile/image-fisheye.jpg);
+}
+
+// ***** FOOTER PAGE TAG ***** //
+footer {
+    width: 100%;
+    height: 450px;
+    background-color: $Black;
+    color: $White;
+
+    font-family: 'Alata',
+        sans-serif;
+    font-size: 1.4rem;
+
+    padding: 1.8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    svg {
+        margin: 0 .5rem;
+    }
+}
+
+.footer-nav {
+    margin: 1.2rem;
+
+    ul {
+        height: 200px;
+        list-style: none;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            font-size: 1.6rem;
+            text-decoration: none;
+
+            color: $White;
+        }
+
+        a:hover {
+            border-bottom: 2px solid $White;
+        }
+    }
+}
+
+// ***** CSS/SASS FOR DESKTOP RESPONSIVENESS ***** //
+@media (min-width: 1440px) {
+    .container {
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    header {
+        height: 60vh;
+        padding: 3.6rem;
+
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url('../images/desktop/image-hero.jpg');
+        background-position: top;
+    }
+
+    .header-menu {
+        width: 80%;
+        margin: 0 auto;
+
+        // Hidden Hamburguer Icon for Desktop Version!! //
+        .hamburguer-icon {
+            display: none;
+        }
+
+        nav {
+            width: 40%;
+            display: block;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+        }
+
+        nav ul li a {
+            font-size: 1.9rem;
+            text-decoration: none;
+            color: $White;
+        }
+
+        nav ul li a:hover {
+            border-bottom: 2px solid $White;
+        }
+    }
+
+    // Box "Immersive experiences..."
+    .header-box {
+        max-height: 50%;
+        width: 30%;
+        padding: 3rem;
+        margin: auto 10%;
+
+        font-size: 5rem;
+    }
+
+    // ***** MAIN TAG ***** //
+    .first-container {
+        position: relative;
+
+        margin: 5rem 5rem 11rem;
+    }
+
+    .first-container img {
+        width: 40%;
+        margin-right: 10rem;
+    }
+
+    .presentation-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 30%;
+        height: 235px;
+        margin: 0 auto;
+        padding: 1.2rem;
+
+        background-color: $White;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    // "Our Creations" boxes //
+    .second-container {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .see-all-mobile {
+        display: none;
+    }
+
+    .header-w-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 1.8rem;
+    }
+
+    .header-w-button .see-all-desktop {
+        display: block;
+    }
+
+    // Grid Content Boxes //
+    .boxes-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .box {
+        height: 450px;
+
+        background-position: top;
+    }
+
+    .box-1 {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, .8)),
+            url(../images/desktop/image-deep-earth.jpg);
+    }
+
+    .box-2 {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, .8)),
+            url(../images/desktop/image-night-arcade.jpg);
+    }
+
+    .box-3 {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, .8)),
+            url(../images/desktop/image-soccer-team.jpg);
+    }
+
+    .box-4 {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, .8)),
+            url(../images/desktop/image-grid.jpg);
+    }
+
+    .box-5 {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, .8)),
+            url(../images/desktop/image-from-above.jpg);
+    }
+
+    .box-6 {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, .8)),
+            url(../images/desktop/image-pocket-borealis.jpg);
+    }
+
+    .box-7 {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, .8)),
+            url(../images/desktop/image-curiosity.jpg);
+    }
+
+    .box-8 {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, .8)),
+            url(../images/desktop/image-fisheye.jpg);
+    }
+
+    // FOOTER TAG CONFIGURATIONS //
+    footer {
+        height: 160px;
+        padding: 0 10.8rem;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "logo social-media"
+            "menu-nav copyright";
+
+        justify-items: left;
+
+        svg {
+            grid-area: logo;
+
+        }
+
+        .footer-nav {
+            grid-area: menu-nav;
+            margin-left: 2.4rem;
+        }
+
+        .social-media-container {
+            grid-area: social-media;
+            justify-self: right;
+            margin-right: 2.4rem;
+        }
+
+        .copyright {
+            grid-area: copyright;
+            justify-self: right;
+            margin-right: 2.4rem;
+        }
+    }
+
+    .footer-nav ul {
+        margin-bottom: 1.6rem;
+        height: 50%;
+        flex-direction: row;
+        justify-content: center;
+
+        a {
+            margin: 0 1.8rem;
+        }
+
+    }
+
+}

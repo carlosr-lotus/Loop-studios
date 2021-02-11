@@ -1,0 +1,28 @@
+// **** GLOBAL VARIABLES **** //
+
+// Primary Colors
+$White: hsl(0, 0%, 100%);
+$Black: hsl(0, 0%, 0%);
+$Dark-Gray: hsl(0, 0%, 55%);
+$Very-Dark-Gray: hsl(0, 0%, 41%);
+
+:root {
+    // Font size - 1rem = 10px
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5rem;
+}
+
+// *** Mobile Design First! *** //
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
